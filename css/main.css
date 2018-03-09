@@ -1,11 +1,21 @@
+body
+{
+	margin:0;
+}
+
 .header
 {
-
+	margin: auto;
+	display: block;
+	width:100%;
+	text-align: center;
 }
 
 .nav
 {
-
+	display: block;
+	overflow: hidden;
+	text-align: center;
 }
 
 .banner
@@ -20,5 +30,5 @@
 
 .footer
 {
-	
+
 }
