@@ -210,14 +210,28 @@ a
   border-top-right-radius: 10px;
 }
 
+/*
 .proj_img
 {
 	position: relative;
 	height: auto;
 	width: 50vw;
 }
+*/
 
-.proj_img:hover .overlay {
+.proj_img
+{
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container
+{
+	position: relative;
+}
+
+.container:hover .overlay {
   height: 12%;
 }
 
@@ -225,7 +239,8 @@ a
 {
 	height: 35vh;
 	width: auto;
-	border-radius: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }
 
 .pic img
