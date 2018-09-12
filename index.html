@@ -1,28 +1,49 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/css/main.css" />
+		<title>Jennifer Lai</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
 	</head>
 	<body>
-		<div class="header">
-			<h1>Jennifer Lai hi</h1>
-		</div>
-		<div class="nav">
-			<a href="#about_me">About Me</a>
-			<a href="#projects">Projects</a>
-			<a href="#contact">Contact</a>
-		</div>
-		<div class="banner">
-		</div>
-		<div class="main_content">
-			<div id="about_me">
+		<div class = "top_bar">
+			<div class="header">
+				<a href = "index.html"><h1>JENNIFER LAI</h1></a>
 			</div>
-			<div id="projects">
+			<ul class="nav">
+				<a target = "_blank" href = "resume.pdf"><li>RESUME</li></a>
+				<a href="projects.html"><li>PROJECTS</li></a>
+			</ul>
+		</div>
+		<div class="home">
+			<div class = "pic" id = "pic_id">
+				<a href = "index.html"><img class="absolute_center" src = "pics/pro_pic.jpg" /></a>
+				<div class = "img_border absolute_center"></div>
 			</div>
-			<div id="contact">
+			<div class = "about_me">
+				<p class="intro_text" id="intro_id">I'm Jennifer, a 2nd year Computer Science
+				student at UC Santa Barbara.</p>
 			</div>
 		</div>
-		<div class="footer">
-		</div>
+		<ul class="footer" id = "footer">
+			<a target = "_blank" href = "https://github.com/jenniferlai43"><li><img src = "https://diversity.github.com/assets/svg/mark-github.svg" /></li></a>
+			<a target = "_blank" href = "https://www.linkedin.com/in/jennifer-lai-773b01132"><li><img  src = "https://arkparadigm.com/static/misc/icons/linkedin-white.png" /></li></a>
+			<a href = "mailto:jenniferlai43@gmail.com"><li><img src = "https://cdn.smartpassiveincome.com/wp-content/uploads/2013/11/Email-marketing@2x.png" /></li></a>
+		</ul>
 	</body>
+	<script>
+		function appear()
+		{
+			var pic = document.getElementById("pic_id");
+			var intro = document.getElementById("intro_id");
+			pic.style.transform = "translateX(-200px)";
+			pic.style.opacity = "1";
+			intro.style.opacity = "1";
+			var footer = document.getElementById("footer");
+			footer.style.opacity = "1";
+			footer.style.transform = "translateY(-30%)"
+		}
+		window.onload = function() {
+    		appear();
+		}
+	</script>
 </html>
