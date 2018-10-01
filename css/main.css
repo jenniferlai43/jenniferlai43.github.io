@@ -259,6 +259,7 @@ a
 	padding: 20px;
 	width: 300px;
 	height: 300px;
+	top: -6px;
 	border: 6px white dotted;
 	border-radius: 10000px;
 	transition: 1s;
