@@ -2,164 +2,27 @@
 <html>
 	<head>
 		<title>Jennifer Lai</title>
-		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/mainv2.css" />
+		<link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
 	</head>
 	<body>
-		<div class = "top_bar">
-			<div class="header">
-				<a href = "/"><h1>JENNIFER LAI</h1></a>
+		<div class="sidebar">
+			<div class="pic">
+				<img class="" src = "pics/pro_pic.jpg" />
 			</div>
-			<ul class="nav">
-				<a target = "_blank" href = "resume.pdf"><li>RESUME</li></a>
-				<a href="projects.html"><li>PROJECTS</li></a>
-			</ul>
-		</div>
-		<div class="projects" id = "projects">
-			<ul class = "proj_list">
-				<li onclick = "loadProject(event, 'mm')" class = "proj_tabs middleProjs chosenTab"><h1 class = "proj_title" id = "movie">MyMovies</h1></li>
-				<li onclick = "loadProject(event, 'aih')" class = "proj_tabs middleProjs"><h1 class = "proj_title">Alcohol Information Helper</h1></li>
-				<li onclick = "loadProject(event, 'kys')" class = "proj_tabs middleProjs"><h1 class = "proj_title">Know Your States</h1></li>
-				<li onclick = "loadProject(event, 'bot')" class = "proj_tabs"><h1 class = "proj_title">Botender</h1></li>
-			</ul>
-			<div class = "proj_details">
-				<div class = "desc_wrapper chosenProj" id = "mm">
-					<div>
-						<h1>MyMovies</h1>
-					</div>
-					<div class = "details_container">
-						<div class = "proj_img">
-								<div class = "container">
-									<a target = "_blank" href = "https://my-movies-jen.herokuapp.com/"><img src ="pics/movie.png" /></a>
-									<div class="overlay">
-										<div class = "caption">Demo Link</div>
-									</div>
-								</div>
-						</div>
-						<div>
-							<p class = "date">July 2018</p> <br />
-							<ul>
-								<li>Web app that creates and stores personal ratings for movies.</li>
-								<li>Integrated the backend to the frontend.</li>
-								<li>Designed a smooth, minimalistic user interface.</li>
-							</ul> <br />
-							<p class = "tech">Technologies Used: HTML, CSS, JavaScript, Node.js, MongoDB</p>
-						</div>
-					</div>
-				</div>
-				<div class = "desc_wrapper" id = "aih">
-					<div>
-						<h1>Alcohol Information Helper</h1>
-					</div>
-					<div class = "details_container">
-						<div class = "proj_img">
-							<div class = "container">
-								<a target = "_blank" href="https://github.com/jenniferlai43/lahacks18_aih"><img src ="pics/aih.png" /></a>
-								<div class="overlay">
-									<div class = "caption">Github Link</div>
-								</div>
-							</div>
-						</div>
-						<div>
-							<p class = "date">March 2018</p> <br />
-							<ul>
-								<li>Designed a web service informing readers of the dangers of alcohol.</li>
-								<li>Implemented logic to calculate BAC.</li>
-								<li>Utilized the Google Maps API to locate and mark nearby hospitals.</li>
-								<li>Employed the Twilio API to allow user to contact emergency services through the web browser.</li>
-							</ul> <br />
-							<p class = "tech">Technologies Used: HTML, CSS, JavaScript, Node.js, Google Maps API, Twilio API</p>
-						</div>
-					</div>
-				</div>
-				<div class = "desc_wrapper" id = "kys">
-					<div>
-						<h1>Know Your States</h1>
-					</div>
-					<div class = "details_container">
-						<div class = "proj_img">
-							<div class = "container">
-								<a target = "_blank" href = "https://github.com/jenniferlai43/know_your_states"><img src ="pics/kys.png" /></a>
-								<div class="overlay">
-									<div class = "caption">Github Link</div>
-								</div>
-							</div>
-						</div>
-						<div>
-							<p class = "date">May 2017</p> <br />
-							<ul>
-								<li>Led a 3-person team: planned, scheduled, and delegated responsibilities.</li>
-								<li>Implemented logic for an interactive state and capitals test.</li>
-								<li>Designed the graphical user interface.</li>
-							</ul> <br />
-							<p class = "tech">Technologies Used: HTML, CSS, JavaScript, Node.js, Google Maps API, Twilio API</p>
-						</div>
-					</div>
-				</div>
-				<div class = "desc_wrapper" id = "bot">
-					<div>
-						<h1>Botender</h1>
-					</div>
-					<div class = "details_container">
-						<div class = "proj_img">
-							<div class = "container">
-								<a target = "_blank" href = "https://www.youtube.com/watch?v=yUBBLq-M5RY"><img src ="pics/bot.jpg" /></a>
-								<div class="overlay">
-									<div class = "caption">Youtube Link</div>
-								</div>
-							</div>
-						</div>
-						<div>
-							<p class = "date">Aug 2016</p> <br />
-							<ul>
-								<li>Created a robot that mixes hot cocoa mix and water.</li>
-								<li>Constructed a turbidity sensor, using LED lights and light sensors, that automatically detects when the drink is fully mixed.</li>
-								<li>Connected to an Android app via Bluetooth that tells the robot to begin mixing.</li>
-							</ul> <br />
-							<p class = "tech">Technologies Used: HTML, CSS, JavaScript, Node.js, Google Maps API, Twilio API</p>
-						</div>
-					</div>
-				</div>
+			<div class="links">
+				<a href="index.html">Home</a>
+				<a href="projects.html">Projects</a>
+				<a target="_blank" href="resume.pdf">Resume</a>
 			</div>
 		</div>
-
-		<ul class="footer" id = "footer">
-			<a target = "_blank" href = "https://github.com/jenniferlai43"><li><img src = "https://diversity.github.com/assets/svg/mark-github.svg" /></li></a>
-			<a target = "_blank" href = "https://www.linkedin.com/in/jennifer-lai-773b01132"><li><img  src = "https://arkparadigm.com/static/misc/icons/linkedin-white.png" /></li></a>
-			<a href = "mailto:jenniferlai43@gmail.com"><li><img src = "https://cdn.smartpassiveincome.com/wp-content/uploads/2013/11/Email-marketing@2x.png" /></li></a>
-		</ul>
+		<div class="bookmark">
+			<a target="_blank" href="https://github.com/jenniferlai43"><img src="pics/git.png"></a>
+			<a target="_blank" href="https://www.linkedin.com/in/jennifer-lai-773b01132/"><img src="pics/linkedin.png"></a>
+		</div>
+		<div class="content">
+		</div>
 	</body>
 	<script>
-		function appear()
-		{
-			var projects = document.getElementById("projects");
-			projects.style.opacity = "1";
-			var footer = document.getElementById("footer");
-			footer.style.opacity = "1";
-			footer.style.transform = "translateY(-30%)"
-		}
-		function loadProject(evt, tabName)
-		{
-			var descs = document.getElementsByClassName('desc_wrapper');
-		    for (i = 0; i < descs.length; i++) {
-		    	console.log(descs);
-		    	if (descs[i].classList.contains('chosenProj'))
-		    	{
-		    		descs[i].classList.remove('chosenProj');
-		    	}
-		    }
-		    var tabs = document.getElementsByClassName('proj_tabs');
-    		for (i = 0; i < tabs.length; i++) {
-    			if (tabs[i].classList.contains('chosenTab'))
-		    	{
-		    		tabs[i].classList.remove('chosenTab');
-		    	}
-   		 	}
-   		 	evt.currentTarget.classList.add('chosenTab');
-   		 	document.getElementById(tabName).classList.add('chosenProj');
-		}
-
-		window.onload = function() {
-    		appear();
-		}
 	</script>
 </html>
