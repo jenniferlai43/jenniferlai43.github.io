@@ -5,7 +5,7 @@
 }
 
 body {
-	
+	font-family: 'Thasadith', sans-serif;
 }
 
 .sidebar img {
@@ -73,6 +73,63 @@ body {
 	margin-left: 300px;
 	color:black;
 	z-index: 0;
+}
+
+.project_wrapper {
+	display: flex;
+	align-content: space-around;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.project_wrapper a{
+	text-decoration: none;
+    margin: auto;
+    color: black;
+}
+
+.project_info {
+	border: 1px black solid;
+	width: 50vw;
+	height: 70vh;
+	margin: auto;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.project_info img {
+	width: 30vw;
+	height: auto;
+	margin: 15px 20px;
+}
+
+.container {
+	width: 270px;
+	height: 80px;
+	border: 1px black solid;
+	padding: 5px 10px;
+	margin: 10px auto;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.container:hover {
+	background-color: #70A3BF;
+	color: white;
+	border-color: #70A3BF;
+}
+
+.container h1 {
+	font-size: 24px;
+}
+
+.container h2 {
+	font-size: 15px;
 }
 
 .blurb {
