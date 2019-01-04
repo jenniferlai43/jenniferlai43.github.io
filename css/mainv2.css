@@ -1,11 +1,11 @@
 * {
 	margin: 0;
 	padding: 0;
-	border: 0;
 }
 
 body {
 	font-family: 'Thasadith', sans-serif;
+	background: #F7F7F7;
 }
 
 .sidebar img {
@@ -52,6 +52,8 @@ body {
 	position: relative;
 	width: 40px;
 	border:none;
+	-webkit-filter: drop-shadow(2px 2px 2px #575757);
+  	filter: drop-shadow(2px 2px 2px #575757);
 }
 
 .bookmark a:hover {
@@ -98,10 +100,12 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
+	min-width: 400px;
 }
 
 .project_info img {
-	width: 30vw;
+	width: 26vw;
 	height: auto;
 	margin: 15px 20px;
 }
@@ -162,9 +166,33 @@ body {
 	margin: 18px;
 	padding: 10px 80px;
 	transition: 0.5s;
+	transform: translateZ(0) scale(1,1)!important; 
 }
 
 .links a:hover {
 	background: white;
 	color: #70A3BF;
+}
+
+.links a:active {
+	background: white;
+	color: #70A3BF;
+}
+
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.8s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
