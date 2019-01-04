@@ -1,0 +1,170 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font-family: 'Thasadith', sans-serif;
+}
+
+.sidebar img {
+	width: 200px;
+	padding: 10px;
+	border-radius: 10000px;
+	border: 1px white dashed;
+	margin: 5px;
+}
+
+.sidebar {
+	height: 100%; /* Full-height: remove this if you want "auto" height */
+  	width: 300px; /* Set the width of the sidebar */
+  	background: #70A3BF;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 1; /* Stay on top */
+  	top: 0; /* Stay at the top */
+  	left: 0;
+  	overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+
+.bookmark { 
+    position: fixed; 
+    width: 300px;
+    padding: 0px; 
+    z-index: 2;
+    display: flex;
+	justify-content: center;
+}
+
+.bookmark a {
+	margin: 0px 30px;
+	transition: 1s;
+	text-decoration: none;
+}
+
+.bookmark img {
+	top: -20px;
+	position: relative;
+	width: 40px;
+	border:none;
+}
+
+.bookmark a:hover {
+	transform: translateY(20px);
+}
+
+.content {
+	background: #F7F7F7;
+	color: white;
+	background-image: url("https://i.stack.imgur.com/dPltu.png");
+	background-repeat: repeat;
+	background-blend-mode: lighten;
+	font-family: 'Thasadith', sans-serif;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-left: 300px;
+	color:black;
+	z-index: 0;
+}
+
+.project_wrapper {
+	display: flex;
+	align-content: space-around;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.project_wrapper a{
+	text-decoration: none;
+    margin: auto;
+    color: black;
+}
+
+.project_info {
+	border: 1px black solid;
+	width: 50vw;
+	height: 70vh;
+	margin: auto;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.project_info img {
+	width: 30vw;
+	height: auto;
+	margin: 15px 20px;
+}
+
+.container {
+	width: 270px;
+	height: 80px;
+	border: 1px black solid;
+	padding: 5px 10px;
+	margin: 10px auto;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.container:hover {
+	background-color: #70A3BF;
+	color: white;
+	border-color: #70A3BF;
+}
+
+.container h1 {
+	font-size: 24px;
+}
+
+.container h2 {
+	font-size: 15px;
+}
+
+.blurb {
+	width: 500px;
+	font-size: 28px;
+}
+
+.miniblurb {
+	font-size:22px;
+}
+
+.aboutme {
+	font-family: 'Thasadith', sans-serif;
+	text-align: center;
+	font-size: 18px;
+	padding: 15px;
+}
+
+.links {
+	list-style: none;
+}
+
+.links a {
+	font-family: 'Thasadith', sans-serif;
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+	display: flex;
+	border: white 1px solid;
+	margin: 18px;
+	padding: 10px 80px;
+	transition: 0.5s;
+}
+
+.links a:hover {
+	background: white;
+	color: #70A3BF;
+}
