@@ -167,7 +167,6 @@ body {
 	margin: 18px;
 	padding: 10px 80px;
 	transition: 0.5s;
-	transform: translateZ(0) scale(1,1)!important; 
 }
 
 .links a:hover {
@@ -188,6 +187,93 @@ body {
 	animation-timing-function: ease-in;
 	animation-duration: 0.8s;
 }
+
+/* Extra small devices (phones, 600px and down) - PORTRAIT */ 
+@media only screen and (max-width: 600px) and (orientation: portrait)
+{
+	.sidebar 
+	{
+		height: 20vh; /* Full-height: remove this if you want "auto" height */
+	  	width: 100%; /* Set the width of the sidebar */
+	  	overflow-x: none;
+	  	flex-direction: unset;
+	}
+	.sidebar img {
+		width: 100px;
+		margin: 5px;
+	}
+	.bookmark
+	{
+		display: none;
+	}
+	.links a
+	{
+		margin: 10px;
+    	padding: 5px 50px;
+	}
+	.content {
+		margin-left: 0px;
+		margin-top: 150px;
+		height:75vh;
+		padding: 0px 20px;
+	}
+	.blurb {
+		font-size: 20px;
+	}
+	.miniblurb {
+		font-size:15px;
+	}
+	.container {
+	    height: 40px;
+	    border: 1px black solid;
+	    padding: 5px 10px;
+	    margin: 2vh auto;
+	}
+	.project_info {
+		min-width: fit-content;
+		height: auto;
+		font-size: 0.8em;
+	}
+} 
+
+/* Extra small devices (phones, 600px and down) - LANDSCAPE */ 
+@media only screen and (max-width: 850px) and (orientation: landscape)
+{
+	.sidebar img{
+		width: 120px;
+	}
+	.links a {
+		margin: 12px;
+	}
+	.content {
+		padding: 0px 20px;
+	}
+	.blurb {
+		font-size: 30px;
+	}
+	.miniblurb {
+		font-size:20px;
+	}
+	.container {
+	    height: 40px;
+	    border: 1px black solid;
+	    padding: 5px 10px;
+	    margin: 2% auto;
+	}
+	.project_info {
+		min-width: fit-content;
+		height: auto;
+		font-size: 0.6em;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) - PORTRAIT */
+@media only screen and (min-width: 760px) and (orientation: portrait)
+{
+	.project_info {
+		min-width: fit-content;
+	}
+} 
 
 @keyframes fadeInOpacity {
 	0% {
