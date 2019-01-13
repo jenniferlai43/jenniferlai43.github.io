@@ -116,7 +116,7 @@ body {
 	height: 80px;
 	border: 1px black solid;
 	padding: 5px 10px;
-	margin: 10px auto;
+	margin: 2% auto;
 	display: flex;
     flex-direction: column;
     justify-content: center;
@@ -199,7 +199,7 @@ body {
 	  	flex-direction: unset;
 	}
 	.sidebar img {
-		width: 100px;
+		width: 12vh;
 		margin: 5px;
 	}
 	.bookmark
@@ -208,12 +208,16 @@ body {
 	}
 	.links a
 	{
+		font-size: 0.6em;
 		margin: 10px;
     	padding: 5px 50px;
 	}
+	.container {
+		height: 10%;
+	}
 	.content {
 		margin-left: 0px;
-		margin-top: 150px;
+		margin-top: 20vh;
 		height:75vh;
 		padding: 0px 20px;
 	}
@@ -222,12 +226,6 @@ body {
 	}
 	.miniblurb {
 		font-size:15px;
-	}
-	.container {
-	    height: 40px;
-	    border: 1px black solid;
-	    padding: 5px 10px;
-	    margin: 2vh auto;
 	}
 	.project_info {
 		min-width: fit-content;
@@ -239,14 +237,8 @@ body {
 /* Extra small devices (phones, 600px and down) - LANDSCAPE */ 
 @media only screen and (max-width: 850px) and (orientation: landscape)
 {
-	.sidebar img{
-		width: 120px;
-	}
 	.links a {
 		margin: 12px;
-	}
-	.content {
-		padding: 0px 20px;
 	}
 	.blurb {
 		font-size: 30px;
@@ -254,11 +246,8 @@ body {
 	.miniblurb {
 		font-size:20px;
 	}
-	.container {
-	    height: 40px;
-	    border: 1px black solid;
-	    padding: 5px 10px;
-	    margin: 2% auto;
+	.content {
+		padding: 0px 20px;
 	}
 	.project_info {
 		min-width: fit-content;
