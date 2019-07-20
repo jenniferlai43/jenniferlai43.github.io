@@ -113,7 +113,6 @@ body {
 
 .container {
 	width: 270px;
-	height: 80px;
 	border: 1px black solid;
 	padding: 5px 10px;
 	margin: 2% auto;
@@ -130,16 +129,21 @@ body {
 }
 
 .container h1 {
-	font-size: 24px;
+	font-size: 3vh;
 }
 
 .container h2 {
-	font-size: 15px;
+	font-size: 2vh;
 }
 
 .blurb {
-	width: 500px;
+	width: 600px;
 	font-size: 28px;
+}
+
+.current {
+	font-size: 20px;
+	color: #70A3BF;
 }
 
 .miniblurb {
@@ -164,7 +168,7 @@ body {
 	font-size: 14px;
 	display: flex;
 	border: white 1px solid;
-	margin: 18px;
+	margin: 1.5vh;
 	padding: 10px 80px;
 	transition: 0.5s;
 }
@@ -230,6 +234,9 @@ body {
 		min-width: fit-content;
 		height: auto;
 		font-size: 0.8em;
+	}
+	.project_wrapper{
+		margin-top: 20vh;
 	}
 } 
 
