@@ -129,11 +129,11 @@ body {
 }
 
 .container h1 {
-	font-size: 3vh;
+	font-size: 1.5em;
 }
 
 .container h2 {
-	font-size: 2vh;
+	font-size: 1em;
 }
 
 .blurb {
@@ -236,7 +236,7 @@ body {
 		font-size: 0.8em;
 	}
 	.project_wrapper{
-		margin-top: 20vh;
+		margin-top: 15em;
 	}
 } 
 
