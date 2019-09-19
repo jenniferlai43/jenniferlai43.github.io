@@ -1,3 +1,7 @@
+:root {
+  --projectCount: 10;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -192,6 +196,19 @@ body {
 	animation-duration: 0.8s;
 }
 
+@media only screen and (max-width: 883px) {
+	.project_wrapper .container{
+		height: calc(40vh / var(--projectCount));
+		margin: 1% auto;
+	}
+	.container h1{
+		font-size: 1em;
+	}
+	.container h2{
+		font-size: 0.8em;
+	}
+}
+
 /* Extra small devices (phones, 600px and down) - PORTRAIT */ 
 @media only screen and (max-width: 600px) and (orientation: portrait)
 {
@@ -235,10 +252,8 @@ body {
 		height: auto;
 		font-size: 0.8em;
 	}
-	.project_wrapper{
-		margin-top: 15em;
-	}
 } 
+
 
 /* Extra small devices (phones, 600px and down) - LANDSCAPE */ 
 @media only screen and (max-width: 850px) and (orientation: landscape)
